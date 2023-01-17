@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ22</title>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <p> Debes realizar un juego para adivinar un número entre 1 y 10. Para ello debes
+        solicitar al usuario un número y comprobar si es el número aleatorio o es mayor o
+        menor. Para crear un número aleatorio puedes utilizar la siguiente instrucción:
+        var aleatorio=Math.random() * 10;
+    </p>
+    <table>
+        <tr>
+            <td>
+                <label for="numero">Mi Número: </label>
+            </td>
+            <td>
+                <input type="number" name="numero" id="numero">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="comprobar()">Comprobar</button>
+            </td>
+        </tr>
+    </table>
+    <span id="resultado"></span>
+</body>
+</html>

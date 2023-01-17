@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO Y AUDIO</title>
+</head>
+<body>
+    <h1>VÍDEO</h1>
+    <video width="400" height="300"
+        controls
+        autoplay
+        loop
+        muted
+        preload="auto"
+        poster="">
+        <source src="archivos/playa.mp4"/>
+        <source src="archivos/playa.ogx"/>
+        <p>Navegador no soportado</p>
+    </video>
+
+    <audio
+        controls
+        autoplay
+        loop
+        preload="auto">
+        <source src="archivos/funk.mp3" type="audio/mpeg" />        
+    </audio>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bADL-_dwDvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.8091589580577!2d-5.979939384415042!3d37.39434524172775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126ea90248b9ab%3A0x871836a1d9970c11!2sIES%20Isbilya!5e0!3m2!1ses!2ses!4v1667219085085!5m2!1ses!2ses" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <br/>
+
+    <iframe frameborder="0" src="webs/datos.html" style="width: 700px;height: 300px;"></iframe>
+
+    <br/>
+    
+    <object data="webs/datos.html" type="text/html" style="width: 700px;height: 300px;"></object>
+</body>
+</html>

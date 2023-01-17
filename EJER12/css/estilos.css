@@ -1,0 +1,35 @@
+.contenedor {
+    display: flex;
+    /* Dirección horizontal o vertical de las capas */
+    /*flex-direction: row;*/
+
+    /* Hace uso de las propiedades css del elemento */
+    /*flex-wrap: wrap;*/
+    
+    /* Aplico flex-direction y flex-wrap a la vez */
+    /*flex-flow: row-reverse wrap-reverse;*/
+
+    /* Alineación de la capa en el eje x */
+    /*justify-content: space-around;*/
+
+    /*height: 440px;
+    border: 2px solid black;
+    flex-flow: row wrap;
+    justify-content: flex-start;*/
+    
+    /* Alineación en el eje y */
+    /*align-items: stretch;
+    justify-content: center;*/
+}
+
+/*.elemento {
+    width: 24%;
+    background: linear-gradient(to right, blue, white);
+    border: 1px solid black;
+    height: 40px;
+    color: white;
+}*/
+
+.elemento:nth-child(even) {
+    order: 1;
+}

@@ -1,0 +1,124 @@
+/*
+comentario que aparece en el css
+*/
+
+// comentario no aparece en el css
+
+$primary-color: #c0c0c0;
+$secondary-color: #11117F;
+$body-font: 'Roboto', sans-serif;
+
+body {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: $body-font;
+}
+
+p {
+    color: $secondary-color;
+}
+
+
+@for $c from 1 through 5 {
+    .clase#{$c} {
+        color: rgb($c*255/7,$c*255/7,$c*255/7);
+    }
+}
+
+$debug: true !default;
+
+@mixin debugmode {
+    @if $debug {
+        display: inline-block;
+    }
+    @else {
+        display: none;
+    }
+}
+
+.info {
+    @include debugmode();
+}
+
+$columns: 4;
+$column-width: 80px;
+
+@while $columns > 0 {
+    .col-#{$columns} {
+        width: $column-width;
+        left: $column-width * ($columns - 1);
+    }
+
+    $columns: $columns - 1;
+}
+
+$social-links: facebook twitter linkedin reddit;
+
+.social-links {
+    @each $sl in $social-links {
+        .icon-#{$sl} {
+            background-image: url("imagenes/#{$sl}.png"); 
+        }
+    }
+}
+
+@mixin centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+div {
+    @include centrado();
+    background-color: #11117F;
+}
+
+@mixin size($w,$h) {
+    width: $w;
+    height: $h;
+}
+
+.rectangulo {
+    @include size(100px, 200px);
+}
+
+.rectangulo2 {
+    @include size(200px, 400px);
+}
+
+@function calcularPorcentaje($tam-eti, $tam-total) {
+    @return $tam-eti / $tam-total * 100%;
+}
+
+.micapa {
+    width: calcularPorcentaje(300px, 900px);
+}
+
+.display {
+    @include size(5em, 5em);
+    border: 5px solid $secondary-color;
+}
+
+.display-success {
+    @extend .display;
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 5px;
+
+    li {
+        background-color: blue;
+
+        &:hover {
+            background-color: gray;
+        }
+
+        a {
+            text-decoration: dotted;
+        }
+    }
+}

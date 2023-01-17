@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 19</title>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <p>
+        Formulario con 3 números distintos y mostrarlos ordenados
+    </p>
+        <table>
+            <tr>
+                <td>
+                    <label for="num1">Número 1</label>
+                </td>
+                <td>
+                    <input type="number" name="num1" id="num1" autofocus>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="num2">Número 2</label>
+                </td>
+                <td>
+                    <input type="number" name="num2" id="num2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="num3">Número 3</label>
+                </td>
+                <td>
+                    <input type="number" name="num3" id="num3">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button value="ordenar" onclick="ordenar()">Ordenar</button>
+                </td>
+            </tr>
+        </table>
+        <span id="resultado"></span>
+</body>
+</html>

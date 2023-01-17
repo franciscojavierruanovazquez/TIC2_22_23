@@ -1,0 +1,150 @@
+/*
+comentario que aparece en el css
+*/
+/* line 11, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+body {
+  background-color: #c0c0c0;
+  color: #11117F;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 17, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+p {
+  color: #11117F;
+}
+
+/* line 23, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.clase1 {
+  color: #242424;
+}
+
+/* line 23, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.clase2 {
+  color: #494949;
+}
+
+/* line 23, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.clase3 {
+  color: #6d6d6d;
+}
+
+/* line 23, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.clase4 {
+  color: #929292;
+}
+
+/* line 23, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.clase5 {
+  color: #b6b6b6;
+}
+
+/* line 39, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.info {
+  display: inline-block;
+}
+
+/* line 47, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.col-4 {
+  width: 80px;
+  left: 240px;
+}
+
+/* line 47, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.col-3 {
+  width: 80px;
+  left: 160px;
+}
+
+/* line 47, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.col-2 {
+  width: 80px;
+  left: 80px;
+}
+
+/* line 47, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.col-1 {
+  width: 80px;
+  left: 0px;
+}
+
+/* line 59, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.social-links .icon-facebook {
+  background-image: url("imagenes/facebook.png");
+}
+
+/* line 59, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.social-links .icon-twitter {
+  background-image: url("imagenes/twitter.png");
+}
+
+/* line 59, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.social-links .icon-linkedin {
+  background-image: url("imagenes/linkedin.png");
+}
+
+/* line 59, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.social-links .icon-reddit {
+  background-image: url("imagenes/reddit.png");
+}
+
+/* line 73, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: #11117F;
+}
+
+/* line 83, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.rectangulo {
+  width: 100px;
+  height: 200px;
+}
+
+/* line 87, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.rectangulo2 {
+  width: 200px;
+  height: 400px;
+}
+
+/* line 95, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.micapa {
+  width: 33.33333%;
+}
+
+/* line 99, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.display, .display-success {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #11117F;
+}
+
+/* line 104, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+.display-success {
+  background-color: red;
+}
+
+/* line 109, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+ul {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+/* line 113, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+ul li {
+  background-color: blue;
+}
+
+/* line 116, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+ul li:hover {
+  background-color: gray;
+}
+
+/* line 120, ../../../../../REPOSITORIO/EJER16/sass/estilos.scss */
+ul li a {
+  text-decoration: dotted;
+}
+
+/*# sourceMappingURL=estilos.css.map */
