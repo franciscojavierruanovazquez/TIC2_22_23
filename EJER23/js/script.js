@@ -41,7 +41,7 @@ function validarFormulario() {
         cadenaError += "<li>Error: teléfono vacío</li>";
     } else if (tel.length != 9) {
         cadenaError += "<li>Error: teléfono de 9 cifras</li>";
-    } else if (!tel.startWith(9) && !tel.startWith(8) && !tel.startWith(6)) {
+    } else if (!tel.startsWith(9) && !tel.startsWith(8) && !tel.startsWith(6)) {
         cadenaError += "<li>Error: teléfono debe comenzar por 9, 8 o 6</li>";
     }
 
