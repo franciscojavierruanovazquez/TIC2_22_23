@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+
+    <script>
+        function ponerEnMayuscula(campo) {
+            campo.value = campo.value.toUpperCase();
+        }
+
+        function ponerEnAzul(campo) {
+            campo.style = "border: 1px solid blue";
+        }
+    </script>
+
+</head>
+<body>
+    <div style="width: 600px;margin: 0 auto;">
+        <h2>Formulario</h2>
+        <form action="pagina.php" method="post">
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" name="nombre" 
+                                    id="nombre"                                      
+                                    placeholder="Pon tu nombre"
+                                    autofocus
+                                    onkeyup="ponerEnMayuscula(this)"
+                                    onblur="ponerEnAzul(this)"
+                                    size="100"
+                                    maxlength="15">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="apellidos">Apellidos</label></td>
+                    <td><input type="text" name="apellidos" id="apellidos"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password" name="pass" id="pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="pregunta">¿Mayor de edad?</label></td>
+                    <td>
+                        <input type="radio" name="pregunta" id="pregunta" value="Sí" checked>Sí
+                        <input type="radio" name="pregunta" id="pregunta" value="No">No
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="aficiones">Aficiones</label></td>
+                    <td>
+                        <input type="checkbox" name="cine" id="cine" value="cine">Cine
+                        <input type="checkbox" name="musica" id="musica" value="musica">Música
+                        <input type="checkbox" name="deporte" id="deporte" value="deporte">Deporte
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="provincias">Provincias</label></td>
+                    <td>
+                        <select name="provincias" id="provincias">
+                            <option value="-1" selected>Seleccione Provincia</option>
+                            <optgroup label="Zona Centro">
+                                <option value="41">Sevilla</option>
+                                <option value="39">Cádiz</option>
+                            </optgroup>
+                            <optgroup label="Zona Playa">
+                                <option value="30">Málaga</option>
+                                <option value="27">Huelva</option>
+                            </optgroup>
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="foto">Foto</label></td>
+                    <td>
+                        <input type="file" name="foto" id="foto">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="descripcion">Descripción</label></td>
+                    <td>
+                        <textarea name="descripcion" id="descripcion" rows="5" cols="60"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="edad">Edad</label></td>
+                    <td>
+                        <input type="number" name="edad" id="edad" max="10" min="1" step="0.5" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email</label></td>
+                    <td>
+                        <input type="email" name="mail" id="mail">
+                        <input type="url" name="web" id="web">
+                        <input type="search">
+                        <input type="tel">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fechas">Fechas</label></td>
+                    <td>
+                        <input type="date">
+                        <input type="time">
+                        <input type="datetime">
+                        <input type="datetime-local">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Borrar"></td>
+                    <td><input type="submit" value="Enviar"></td>
+                    <td><input type="button" value="Botón" onclick="location.href='http://www.google.es'"></td>
+                </tr>
+            </table>
+            
+            
+            
+        </form>
+    </div>
+</body>
+</html>
