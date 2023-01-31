@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div style="margin-left: auto; margin-right: auto; width: 50%;">
+        <table>
+            <tr>
+                <td colspan="3">
+                    <img src="imagenes/imc.png" alt="IMC">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="peso">Peso (kg)</label>
+                </td>
+                <td>
+                    <input type="number" name="peso" id="peso">
+                </td>
+                <td rowspan="3">                    
+                    <img alt="Imagen Resultado IMC" id="imagenIMC">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="altura">Altura (m)</label>
+                </td>
+                <td>
+                    <input type="number" name="altura" id="altura">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Calcular" onclick="calcularIMC()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <span id="resultado" style="font-size: 36px;font-weight: bold;"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
